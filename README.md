@@ -1,5 +1,5 @@
 # Next App Boilerplate
-This CLI tool allows you to get started with Next.js, very similar to [create-next-app](https://github.com/vercel/next.js/tree/canary/packages/create-next-app), with all the setup done for you
+This CLI tool allows you to get started with Next.js is a shortcut for creating a Next.js app with the [next-app-boilerplate-template](https://github.com/feRpicoral/next-app-boilerplate-template) template.
 
 To create a new app, use the following command:
 ```bash
@@ -12,15 +12,13 @@ $ npx next-app-boilerplate
 $ npx next-app-boilerplate .
 ```
 
+Using this tool is the equivalent of setting the template in `create-next-app`:
+```bash
+$ npx create-next-app -e https://github.com/feRpicoral/next-app-boilerplate-template
+```
+
 ## Why this instead of `create-next-app`?
-You might be wondering why a whole CLI tool instead of a template, that is supported by `create-next-app`? 
+Although this is technically an standalone CLI tool, it is only a shortcut for creating a next app with the [next-app-boilerplate-template](https://github.com/feRpicoral/next-app-boilerplate-template) template.
 
-The only reason this isn't a template is because that would mean it wouldn't be possible to publish to NPM (we need two `package.json` files, one for this project itself and the one used when creating a new Next app). Although it would work just fine, it would make sharing this template harder.
-
-Basically, what `next-app-boilerplate` does is call `create-next-app` with the template in `src/template/default`.
-
-### With that out of the way, why should I use this package?
-While `create-next-app` is great, it doesn't come configured with Jest, Typescript, Styled Components and other wildly used packages. Check the full list of preinstalled packages [here](#packages).
-
-## Packages
-Here is a full list of packages that come preinstalled and configured with `next-app-boilerplate`
+## What comes in this template?
+This boilerplate is Jest, Typescript & Styled Components ready, with linters and a better folder structure. To see exactly how the template looks like, take a look in its [repo](https://github.com/feRpicoral/next-app-boilerplate-template).

@@ -1,7 +1,7 @@
 {
   "name": "next-app-boilerplate",
   "version": "1.0.0",
-  "description": "Create Typescript & Jest ready Next.js apps with one command",
+  "description": "Create Typescript, Jest & Styled Components ready Next.js apps with one command",
   "author": {
     "name": "Fernando Picoral",
     "url": "https://fernandopicoral.com",
@@ -9,20 +9,17 @@
   },
   "license": "MIT",
   "bin": {
-    "next-app-boilerplate": "./dist/index"
+    "next-app-boilerplate": "index"
   },
-  "files": [
-    "dist"
-  ],
   "keywords": [
     "react",
     "next",
     "next.js"
   ],
-  "homepage": "https://github.com/feRpicoral/next-app-boilerplate",
+  "homepage": "https://github.com/feRpicoral/next-app-boilerplate-cli",
   "repository": {
     "type": "git",
-    "url": "https://github.com/feRpicoral/next-app-boilerplate.git"
+    "url": "https://github.com/feRpicoral/next-app-boilerplate-cli.git"
   },
   "engines": {
     "node": ">=10.13.0"
