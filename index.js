@@ -13,13 +13,5 @@ if (argv.length > 1) {
 
 const cmd = `npx create-next-app ${argv.join()} -e ${TEMPLATE_URL}`.replace(/\s\s+/g, ' ');
 
-exec(cmd, error => {
-    if (error) {
-        console.error(error.stack);
-    }
-});
-
-setTimeout(() => {
-    console.info(`Create Next.js app from template in ./${argv.join()}`);
-    process.exit(0);
-}, 1500);
+exec(cmd);
+// TODO Scripts hangs forever, tough killing it after a few seconds result in the successful generation of a Next app
