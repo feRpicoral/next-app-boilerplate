@@ -34,7 +34,7 @@
   },
   "include": [
     "src",
-    "public",
+    "tests",
     "next-env.d.ts"
   ],
   "exclude": [

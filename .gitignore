@@ -48,3 +48,6 @@ dist
 .idea
 .vscode
 .vscode-test
+
+# Allow testing the template but don't save lockfile to git
+src/template/*/yarn.lock

@@ -1,4 +1,3 @@
-
 module.exports = {
     collectCoverageFrom: ['src/**/*.{js,jsx,ts,tsx}', '!src/**/*.d.ts'],
     coverageThreshold: {
@@ -24,7 +23,7 @@ module.exports = {
     moduleNameMapper: {
         '@themes/(.*)': '<rootDir>/src/themes/$1',
         '@components/(.*)': '<rootDir>/src/components/$1',
-        '@pages/(.*)': '<rootDir>/src/pages/$1',
+        '@pages/(.*)': '<rootDir>/src/pages/$1'
     },
     moduleFileExtensions: [
         'web.js',
