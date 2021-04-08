@@ -1,0 +1,9 @@
+{
+  "extends": ["@stockvio"],
+  "env": {
+    "jest": true
+  },
+  "plugins": [
+    "@next/eslint-plugin-next"
+  ]
+}
