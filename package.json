@@ -8,9 +8,10 @@
     "email": "fernandopicoral@gmail.com"
   },
   "license": "MIT",
-  "bin": {
-    "next-app-boilerplate": "index"
-  },
+  "files": [
+    "index.js"
+  ],
+  "bin": "index.js",
   "keywords": [
     "react",
     "next",

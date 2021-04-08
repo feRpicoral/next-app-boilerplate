@@ -13,4 +13,13 @@ if (argv.length > 1) {
 
 const cmd = `npx create-next-app ${argv.join()} -e ${TEMPLATE_URL}`.replace(/\s\s+/g, ' ');
 
-exec(cmd);
+exec(cmd, error => {
+    if (error) {
+        console.error(error.stack);
+    }
+});
+
+setTimeout(() => {
+    console.info(`Create Next.js app from template in ./${argv.join()}`);
+    process.exit(0);
+}, 1500);
