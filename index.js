@@ -13,5 +13,11 @@ if (argv.length > 1) {
 
 const cmd = `npx create-next-app ${argv.join()} -e ${TEMPLATE_URL}`.replace(/\s\s+/g, ' ');
 
-exec(cmd);
-// TODO Scripts hangs forever, tough killing it after a few seconds result in the successful generation of a Next app
+console.log(`Creating a Next app in ./${argv.join() || '.'}\nThis may take a few moments...`);
+
+const create = exec(cmd);
+
+create.on('error', err => {
+   console.error('Something went wrong while creating the app');
+   if (err) console.error(err);
+});
