@@ -1,6 +1,6 @@
 {
   "name": "next-app-boilerplate",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Create Typescript, Jest & Styled Components ready Next.js apps with one command",
   "author": {
     "name": "Fernando Picoral",
